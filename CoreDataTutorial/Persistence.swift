@@ -8,14 +8,16 @@
 import CoreData
 
 struct PersistenceController {
-    static let shared = PersistenceController()
+    static let shared = PersistenceController(inMemory: true)
 
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        for i in 0..<10 {
+            let newItem = User(context: viewContext)
+			newItem.firstName = "Test"
+			newItem.lastName = "User \(i)"
+			newItem.email = "test.user\(i)@mydomain.com"
         }
         do {
             try viewContext.save()

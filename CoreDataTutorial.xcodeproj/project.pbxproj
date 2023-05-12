@@ -16,6 +16,7 @@
 		DCCB73052A0B9CFA0063A911 /* CoreDataTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB73042A0B9CFA0063A911 /* CoreDataTutorialTests.swift */; };
 		DCCB730F2A0B9CFA0063A911 /* CoreDataTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB730E2A0B9CFA0063A911 /* CoreDataTutorialUITests.swift */; };
 		DCCB73112A0B9CFA0063A911 /* CoreDataTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB73102A0B9CFA0063A911 /* CoreDataTutorialUITestsLaunchTests.swift */; };
+		DCCB731F2A0B9F760063A911 /* User+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB731E2A0B9F760063A911 /* User+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		DCCB730A2A0B9CFA0063A911 /* CoreDataTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCB730E2A0B9CFA0063A911 /* CoreDataTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTutorialUITests.swift; sourceTree = "<group>"; };
 		DCCB73102A0B9CFA0063A911 /* CoreDataTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DCCB731E2A0B9F760063A911 /* User+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		DCCB72ED2A0B9CF90063A911 /* CoreDataTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				DCCB731D2A0B9F3C0063A911 /* Extensions */,
 				DCCB72EE2A0B9CF90063A911 /* CoreDataTutorialApp.swift */,
 				DCCB72F02A0B9CF90063A911 /* ContentView.swift */,
 				DCCB72F22A0B9CFA0063A911 /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				DCCB73102A0B9CFA0063A911 /* CoreDataTutorialUITestsLaunchTests.swift */,
 			);
 			path = CoreDataTutorialUITests;
+			sourceTree = "<group>";
+		};
+		DCCB731D2A0B9F3C0063A911 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCCB731E2A0B9F760063A911 /* User+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				DCCB72FB2A0B9CFA0063A911 /* CoreDataTutorial.xcdatamodeld in Sources */,
 				DCCB72F82A0B9CFA0063A911 /* Persistence.swift in Sources */,
 				DCCB72F12A0B9CF90063A911 /* ContentView.swift in Sources */,
+				DCCB731F2A0B9F760063A911 /* User+Extensions.swift in Sources */,
 				DCCB72EF2A0B9CF90063A911 /* CoreDataTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
